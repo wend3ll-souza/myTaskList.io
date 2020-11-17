@@ -1,0 +1,88 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+
+*{
+    margin: 0;
+}
+
+#lista-tarefas{
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+body{
+        color: #4a4a4a;
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 1.5;
+        background-color: floralwhite;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    max-height: 500px;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.404);
+}
+
+main p {
+    margin: 1rem;
+    text-align: center;
+}
+.lista-tarefas{
+    width: 100%;
+    display: flex;
+    height: 500px;
+    justify-content: space-around;
+    background-color: rgb(233, 227, 227);
+}
+
+.input-tarefas {
+    margin-top: 30px;
+}
+
+.button-container{
+    margin-top: 40px;
+    max-height: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.header{
+    margin-top: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.itemSelected{
+    background-color: rgba(212, 207, 207, 0.637);
+    cursor: pointer;
+}
+
+.item{
+    margin-left: 3rem;
+}
+
+.item:hover{
+    background-color:  rgba(212, 207, 207, 0.637);
+    cursor: pointer;
+}
+
+.completed{
+   text-decoration:  line-through solid rgb(0, 0, 0);
+}
+
+nav{
+    font-size: 20px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./animations.css">
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+    <title>Minha Lista de Tarefas</title>
+</head>
+<body>
+    <header class="header animate-right">
+        <div>
+            <h1 class="title">
+                <i class="fas fa-tasks"></i>
+                Minha Lista de Tarefas
+            </h1>
+        </div>
+    </header>
+    <main class="animate-up container">
+        <p id="funcionamento">
+            Clique duas vezes em um item para marcá-lo como completo
+        </p>
+        <section class="lista-tarefas">
+            <section class="lista">
+                <input type="text" id="texto-tarefa" class="input is-primary input-tarefas" placeholder="escreva suas tarefas aqui" value="">
+                <ol id="lista-tarefas"></ol>
+            </section>
+            <section class="button-container">
+                <button id="criar-tarefa" class='button is-primary' type="submit">Adicionar
+                </button>
+                <button id='salvar-tarefas' class="button is-info">Salvar</button>
+                <button id="mover-cima" class="button">Cima</button>
+                <button id="mover-baixo" class="button">Baixo</button>
+                <button id="remover-finalizados" class="button">Remover Completos</button>
+                <button id="remover-selecionado" class="button">Remover Selecionado</button>
+                <button id="apaga-tudo" class="button is-danger">Apagar Tudo</button>
+            </section>      
+        </section>
+    </main>
+    <nav>
+        <a href="https://github.com/wend3ll-souza" target="_blank">
+            <i class="fab fa-github-alt"></i>
+        </a>
+        <a href="https://www.behance.net/wend3llsouza" target="_blank">
+            <i class="fab fa-behance-square"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/wendell-souza-5b13781a3/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </nav>
+</body>
+<script src="./script.js"></script>
+</html>
