@@ -1,7 +1,17 @@
+// Lista de tarefas
+
+// input onde será digitado a nova tarefa
 const inputTxt = document.querySelector('#texto-tarefa');
+
+// ol ancora para comportar as li dinamicas
 const tarefaList = document.querySelector('#lista-tarefas');
+
+// Carregando tarefas que podem ter sido salvas
 tarefaList.innerHTML = localStorage.getItem("tarefaList");
+
+//Eventos Click
 addEventListener('click', (event) => {
+    
     if(event.target.id == 'criar-tarefa'){
         if(inputTxt.value == ''){
             alert('insira uma tarefa por favor');
